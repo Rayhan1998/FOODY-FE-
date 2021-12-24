@@ -23,7 +23,7 @@ export default function ResultsPage() {
     if (query) {
       axios
         .get(
-          `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=1f1fe157&app_key=${APIKEY}`
+          `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=1f1fe157&app_key=$adf65b2d88f6b6e7d91211344c5b19a4`
         )
         .then(res => {
           setResults(res.data.hits);
